@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ciclo 3 - Reto 2 - Mensajes</title>
+    <style>
+        table, th, td {
+          border: 1px solid gray;
+          border-collapse: collapse;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fn_message.js"></script>
+
+</head>
+
+<body>
+    <h1 align="center"> Ciclo 3 - Reto 2 </h1>
+
+    <h2> Clientes. </h2>
+    <p>Consulta de Registros:</p>
+
+    <div id="resultado"></div>
+
+    <br />
+    <button onclick="traerInformacion()"> Consultar </button>
+
+    <div>
+        <br />
+        <fieldset style="width: 35%">
+            <legend>Datos del Registro:</legend>
+            <table align="center">
+                <tr>
+                    <td>ID:</td>
+                    <td><input type="number" id="id" placeholder="id"></td>
+                </tr>
+                <tr>
+                    <td>TEXTO DEL MENSAJE:</td>
+                    <td><input type="text" id="messagetext" placeholder="messagetext"></td>
+                </tr>
+            </table>
+        </fieldset>
+
+    </div>
+
+    <br />
+    <button onclick="guardarInformacion()"> Guardar </button>
+    <button onclick="editarInformacion()"> Actualizar </button>
+    <br />
+    <p>Para volver a la pagina de inicio de clic en el botón:</p>
+    <button onclick="window.location.href='/index.html'"> Inicio </button>
+
+</body>
+
+</html>
